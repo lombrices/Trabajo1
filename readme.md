@@ -1,16 +1,16 @@
 # [Trabajo 1]
 ## Descripcion
-Este programa implementado en c++ ofrece un sistema que permite al usuario interactuar con una interfaz capaz de realizar  5 funciones, y ademas posee un sistema de login. Las funciones disponibles se ejecutan con parametros ingresados por el usuario al momento de ejecutar el programa.
+* Este programa implementado en c++ ofrece un sistema que permite al usuario interactuar con una interfaz capaz de realizar  5 funciones, y ademas posee un sistema de login. Las funciones disponibles se ejecutan con parametros ingresados por el usuario al momento de ejecutar el programa.
 
 ## Requisitos
--cpp (Debian 13.3.0-5) 13.3.0
+* -cpp (Debian 13.3.0-5) 13.3.0
 -Libreria ncurses
 -Compilardor g++
 -Makefile
 -Es necesario estar en la carpeta 'Trabajo1'
 
 ## Instalacion / Compilacion
-Para la instalacion de la libreria ncurses, ejecutar el comando:
+* Para la instalacion de la libreria ncurses, ejecutar el comando:
 
 sudo apt-get install libncurses5-dev libncursesw5-dev
 
