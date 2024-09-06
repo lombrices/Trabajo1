@@ -19,7 +19,7 @@ sudo apt-get install libncurses5-dev libncursesw5-dev
 -Para compilar el programa, se debe ejecutar por consola el comando "make"
 
 ## Ejecucion
-* -Luego, para ejecutar el programa, se debe ejecutar por consola el comando ./programa -u <usuario> -p <contrasena> -v <vector> -n <numero> -t <frase>
+* -Luego, para ejecutar el programa, se debe ejecutar por consola el comando ./programa -u "usuario" -p "contrasena" -v "vector" -n "numero" -t "frase"
 
 Donde:
 
