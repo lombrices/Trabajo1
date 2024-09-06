@@ -54,10 +54,9 @@ int main(int argc, char **argv){
 
     //Verifica si el user y la contraseña ingresadas son correctos
     if(verificaLogin(userStrENV,username,passwordStrENV,pass)==false){
+        cout << "Usuario y/o contraseña invalidos\nSaliendo del programa....";
         return EXIT_FAILURE;
     }
-    
-    cout << "Login correcto";
     
     //lanzar interfaz
     launchInterfaz(numeros,frase,x);

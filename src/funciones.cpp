@@ -1,9 +1,9 @@
 #include "includes.h"
 
+//Esta funcion recibe un string y le quita los espacios en blanco
 string transformarFrase(string frase){
     string fraseT;
     for(char i : frase){
-        //Quitamos los espacios de la frase
         if(i!=' '){
             fraseT.push_back(tolower(i));
             
@@ -12,6 +12,7 @@ string transformarFrase(string frase){
     return fraseT;
 }
 
+//Esta funcion revisa si una frase o palabra es palindrome o no, no se connsideran los espacios en blanco ni mayusculas
 void esPalindromo(string frase, string fraseModificada){
     string revertido=fraseModificada;
     reverse(revertido.begin(), revertido.end());
@@ -25,6 +26,7 @@ void esPalindromo(string frase, string fraseModificada){
 
 }
 
+//Esta funcion cuenta las vocales de una frase o palabra
 void contarVocales(string frase, string fraseModificada){
     int c=0;
     for(char i : fraseModificada){
@@ -34,6 +36,8 @@ void contarVocales(string frase, string fraseModificada){
     printw("La frase \"%s\" tiene %d vocales\n", frase.c_str(), c);
     printw("Presione cualquier tecla para volver");
 }
+
+//Esta funcion cuenta las letras de una frase o palabra
 void contarLetras(string frase, string fraseModificada){
     int c=0;
     for(char i : fraseModificada){
@@ -44,8 +48,10 @@ void contarLetras(string frase, string fraseModificada){
     printw("Presione cualquier tecla para volver");
 }
 
+//Esta funcion calcula la funcion f(x)=(5*x)*x+1/x para un numero flotante x, recibe un string con el numero
 void calcularFuncion(string n){
     int puntos=0;
+    //Si el numero tiene letras o mas de un '.' no se calcula la conversion, debido a formato invalido del numero
     for(char i : n){
         if(i=='.'){
             puntos++;
@@ -61,6 +67,7 @@ void calcularFuncion(string n){
         printw("\nPresione cualquier tecla para volver");
         return;
     }
+    //Intentamos realizar la conversion a flotante y calcular la funcion, si no se puede, capturamos el error
     try {
         float x = stof(n);
         if(x==0){
@@ -83,6 +90,8 @@ void calcularFuncion(string n){
     }
     
 }
+
+//Esta funcion calcula  el promedio y la suma de un vector de numeros enteros, recibe el string con el vector
 void promedioYSuma(string numerosString){
     //Obtenemos vector de numeros
     vector<int> numeros;  //Vector para almacenar los números enteros
@@ -114,7 +123,7 @@ void promedioYSuma(string numerosString){
                     printw("ERROR: FORMATO DE VECTOR INVALIDO, NO PUEDE EJECUTAR ESTA OPCION.");
                     return;
                 }
-            }else{
+            }else{ //Este caso servira para verificar que no hayan dos o mas ';' seguidos, o que no empiece con ';'
                 printw("ERROR: FORMATO DE VECTOR  INVALIDO, NO PUEDE EJECUTAR ESTA OPCION");
                 return;
             }
@@ -135,7 +144,7 @@ void promedioYSuma(string numerosString){
             printw("ERROR: FORMATO DE VECTOR INVALIDO, NO PUEDE EJECUTAR ESTA OPCION.");
             return;
         }
-    }else{
+    }else{ //Este caso servira para verificar que no termine con ';'
         printw("ERROR: FORMATO DE VECTOR  INVALIDO, NO PUEDE EJECUTAR ESTA OPCION");
         return;
     }
@@ -148,4 +157,5 @@ void promedioYSuma(string numerosString){
     printw("La suma de los numeros es: %f",suma);
     printw("\nEl promedio de los numeros es: %f",promedio);
     printw("\nPresione cualquier tecla para volver");
+    return;
 }

@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 //Funcion para lanzar la interfaz
 void launchInterfaz(string numeros,string frase, string x) {
     //Quitamos los espacios de la frase

@@ -30,8 +30,8 @@ void verificaClaves(string user, string password){
 }
 
 bool verificaLogin(string user1, string user2, string password1, string password2){
+    //Verificamos si el login es correcto
     if(user1!=user2 || password1!=password2){
-        cout << "Nombre de usuario y/o contraseña incorrecto" << endl;
         return false;
     }
     return true;
