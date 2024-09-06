@@ -23,19 +23,6 @@ sudo apt-get install libncurses5-dev libncursesw5-dev
 
 Donde:
 
-<usuario>: nombre de usuario, el cual debe tener solo letras y un largo minimo de 3
-
-<contrasena>: contrasena, la cual debe tener letras y/o numeros y un largo minimo de 6
-
-<vector>: vector de numeros enteros, este vector debe tener el formato "a1;a2;a3;...;an", donde a1,a2,a3,...,an son enteros, separados por ';'. El vector no debe tener espacios en blancos ni 
-otros caracteres
-
-<numero>: es un numero el cual puede ser entero o flotante, si es flotante decimal, debe estar separado por un '.' 
-
-<frase>: es una frase, puede tener cualquier caracter, ya sean numeros, letras o caracteres
-
-Tanto el vector de numeros como la frase deben ir entre ""
-
 | Argumento | Descripcion |
 | -------- | ----------- |
 | u | Especifica el usuario,  debe tener solo letras y un largo minimo de 3 |
@@ -44,6 +31,8 @@ Tanto el vector de numeros como la frase deben ir entre ""
 otros caracteres |
 | n | Numero, puede ser entero o flotante, si es flotante decimal, debe estar separado por un '.'  |
 | t | Frase puede tener cualquier caracter, ya sean numeros, letras o caracteres |
+
+Todos los valores de los parametros deben ir entre ""
 
 
 ## Funciones
