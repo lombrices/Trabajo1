@@ -4,10 +4,10 @@
 
 ## Requisitos
 * -cpp (Debian 13.3.0-5) 13.3.0
--Libreria ncurses
--Compilardor g++
--Makefile
--Es necesario estar en la carpeta 'Trabajo1'
+* -Libreria ncurses
+* -Compilardor g++
+* -Makefile
+* -Es necesario estar en la carpeta 'Trabajo1'
 
 ## Instalacion / Compilacion
 * Para la instalacion de la libreria ncurses, ejecutar el comando:
