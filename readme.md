@@ -27,8 +27,7 @@ Donde:
 | -------- | ----------- |
 | u | Especifica el usuario,  debe tener solo letras y un largo minimo de 3 |
 | p | Especifica la contraseña del usuario debe tener letras y/o numeros y un largo minimo de 6 |
-| v | Vector de numeros enteros, este vector debe tener el formato "a1;a2;a3;...;an", donde a1,a2,a3,...,an son enteros, separados por ';'. El vector no debe tener espacios en blancos ni 
-otros caracteres |
+| v | Vector de numeros enteros, este vector debe tener el formato "a1;a2;a3;...;an", donde a1,a2,a3,...,an son enteros, separados por ';'. El vector no debe tener espacios en blancos ni otros caracteres |
 | n | Numero, puede ser entero o flotante, si es flotante decimal, debe estar separado por un '.'  |
 | t | Frase puede tener cualquier caracter, ya sean numeros, letras o caracteres |
 
